@@ -1,0 +1,12 @@
+.joshList {
+    display: flex;
+    cursor: pointer;
+    overflow: scroll;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.joshList::-webkit-scrollbar {
+    display: none;
+}
