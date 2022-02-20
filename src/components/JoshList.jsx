@@ -4,7 +4,7 @@ import './JoshList.css'
 
 const JoshList = ({joshListData, setSelectedJosh}) => {
   return (
-    <div className='joshList' >
+    <div className='joshLists' >
         {joshListData.map(josh=>{
             return (
                 <div

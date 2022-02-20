@@ -5,7 +5,7 @@ import {useState, useEffect } from 'react';
 import axios from 'axios';
 import JoshList from './components/JoshList';
 import Main from './components/Main';
-const url = 'https://testnets-api.opensea.io/assets?asset_contract_address=0x7078a73182B4Adf75c8635cb8fC8310462013c63&order_direction=desc'
+const url = 'https://testnets-api.opensea.io/assets?asset_contract_address=0xe13af253Ba7AAaba280af09A59De7E2230D54CC9&order_direction=asc'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   const getMyNfts = async() => {
     const response = await fetch(url)
     const openseaData = await response.json()
-    setJoshListData(openseaData.assets);
+    setJoshListData(openseaData.assets.reverse());
   }
 
   useEffect(()=>{

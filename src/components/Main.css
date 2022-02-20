@@ -2,17 +2,13 @@
     max-height: 50vh;
 }
 
-.main > div {
-    margin: 10px;
-}
-
 .mainContent {
     display: flex;
     padding-bottom: 20px;
     border-bottom: 1px solid #fff;
 }
 
-.mainContent > div {
+.joshHighlight {
     flex: 0.25;
     display: flex;
     align-items: center;
@@ -20,11 +16,10 @@
 }
 
 .joshContainer {
-    overflow: hidden;
     border-radius: 20px;
+    overflow: hidden;
     display: flex;
     margin-right: 20px;
-    color: #fff;
 }
 
 .selectedJosh {
@@ -44,7 +39,6 @@
 .title {
     font-size: 96px;
     font-weight: 800;
-    color: #fff;
 }
 
 .itemNumber {
@@ -85,7 +79,6 @@
 
 .ownerNameAndHandle {
     flex: 1;
-    color: #eee;
 }
 
 .ownerHandle {

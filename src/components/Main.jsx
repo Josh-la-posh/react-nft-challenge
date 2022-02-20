@@ -13,32 +13,32 @@ const Main = ( {selectedJosh, joshListData} ) => {
     
 
   return (
-      <div className="main">
-          <div className="mainContent">
-              <div className="joshHighlight">
-                  <div className="joshContainer">
+        <div className="main">
+            <div className="mainContent">
+                <div className="joshHighlight">
+                    <div className="joshContainer">
                       <img 
                         className='selectedJosh'
                         src={activeJosh.image_url}
                         alt={activeJosh.name} />
-                  </div>
-              </div>
-
-              <div className="joshDetails">
-                <div className="title">
-                    {activeJosh.name}
+                    </div>
+                </div>
+                <div className="joshDetails">
+                    <div className="title">
+                        {activeJosh.name}
+                    </div>
                     <span className='itemNumber'>
                         .#{activeJosh.token_id}
                     </span>
                 </div>
                 <div className="owner">
                     <div className="ownerImage">
-                        <img src={activeJosh.owner.profile_image_url}
+                        <img src={activeJosh.owner.profile_img_url}
                         alt={activeJosh.name} />
                     </div>
                     <div className="ownerDetails">
                         <div className="ownerNameAndHandle">
-                            <div>0x866aAe9434CddA2424C284CC76299371eA8778f8</div>
+                            <div>{activeJosh.owner.address}</div>
                             <div className="ownerHandle">
                                 @nova_jy
                             </div>
@@ -57,9 +57,8 @@ const Main = ( {selectedJosh, joshListData} ) => {
                         </div>
                     </div>
                 </div>
-              </div>
-          </div>
-      </div>
+            </div>
+        </div>
   )
 }
 
