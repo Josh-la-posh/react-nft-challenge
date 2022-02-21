@@ -23,37 +23,45 @@ const Main = ( {selectedJosh, joshListData} ) => {
                         alt={activeJosh.name} />
                     </div>
                 </div>
-                <div className="joshDetails">
-                    <div className="title">
-                        {activeJosh.name}
+                <div className="rightContainer">
+                    <div className="joshDetails">
+                        <div className="title">
+                            {activeJosh.name}
+                        </div>
+                        <span className='itemNumber'>
+                            .#{activeJosh.token_id}
+                        </span>
                     </div>
-                    <span className='itemNumber'>
-                        .#{activeJosh.token_id}
-                    </span>
-                </div>
-                <div className="owner">
-                    <div className="ownerImage">
-                        <img src={activeJosh.owner.profile_img_url}
-                        alt={activeJosh.name} />
-                    </div>
-                    <div className="ownerDetails">
-                        <div className="ownerNameAndHandle">
-                            <div>{activeJosh.owner.address}</div>
-                            <div className="ownerHandle">
-                                @nova_jy
+                    <div className="owner">
+                        <div className="ownerImage">
+                            <img src={activeJosh.owner.profile_img_url}
+                            alt={activeJosh.name} />
+                        </div>
+                        <div className="ownerDetails">
+                            <div className="ownerNameAndHandle">
+                                <div>{activeJosh.owner.address}</div>
+                                <div className="ownerHandle">
+                                    <a href="https://twitter.com/Nova_JY">@nova_jy</a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="ownerLink">
-                            <img src={instagramLogo}
-                            alt="" />
-                        </div>
-                        <div className="ownerLink">
-                            <img src={twitterLogo}
-                            alt="" />
-                        </div>
-                        <div className="ownerLogo">
-                            <img src={moreIcon}
-                            alt="" />
+                            <div className="ownerLink">
+                                <a href="https://instagram.com/josh_la_posh">
+                                    <img src={instagramLogo}
+                                    alt="" />
+                                </a>
+                            </div>
+                            <div className="ownerLink">
+                                <a href="https://twitter.com/Nova_JY">
+                                    <img src={twitterLogo}
+                                    alt="" />
+                                </a>
+                            </div>
+                            <div className="ownerLink">
+                                <a href="https://www.linkedin.com/in/jfajobi">
+                                    <img src={moreIcon}
+                                    alt="" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

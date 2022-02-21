@@ -1,10 +1,11 @@
 .main {
-    max-height: 50vh;
+    /* max-height: 50vh; */
+    margin-bottom: 20px;
 }
 
 .mainContent {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #fff;
 }
 
@@ -28,7 +29,7 @@
     max-height: 30vw;
 }
 
-.joshDetails {
+.rightContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,9 +37,14 @@
     color: #fff;
 }
 
+.joshDetails {
+    display: flex;
+}
+
 .title {
     font-size: 96px;
     font-weight: 800;
+    margin-right: 15px;
 }
 
 .itemNumber {
@@ -75,26 +81,28 @@
     display: flex;
     align-items: center;
     flex: 1;
+    color: #fff;
 }
 
 .ownerNameAndHandle {
     flex: 1;
 }
 
-.ownerHandle {
+.ownerHandle > a {
     color: #00ebfe;
+    text-decoration: none;
 }
 
 .ownerLink {
     padding: 10px;
     border-radius: 50px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border: 1px solid #fff;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
 }
 
-.ownerLink > img {
+.ownerLink > a > img {
     height: 100%;
     width: 100%;
 }
